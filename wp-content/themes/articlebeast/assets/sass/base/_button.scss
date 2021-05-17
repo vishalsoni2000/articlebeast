@@ -1,0 +1,105 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.skew-btn .submit-container .submit-wrap .nf-field-element {
+	-webkit-transform: skewX(-20deg);
+	-ms-transform: skewX(-20deg);
+	-o-transform: skewX(-20deg);
+	transform: skewX(-20deg);
+
+	input {
+		-webkit-transform: skewX(20deg);
+		-ms-transform: skewX(20deg);
+		-o-transform: skewX(20deg);
+		transform: skewX(20deg);
+		background: none;
+		border: none;
+	}
+}
+
+body.logged-in header {
+	top: 32px;
+}
+
+.btn-center {
+	text-align: center;
+}
+
+.read-more {
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 0;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	border-width: $border-size;
+	border-style: $border-style;
+	border-color: $border-color;
+	font-size: $font-size-large;
+	font-weight: 700;
+	background: transparent;
+    letter-spacing: 1.5px;
+	color: color('brand-secondary');
+	-webkit-transition: 0.5s ease all;
+	-o-transition: 0.5s ease all;
+	transition: 0.5s ease all;
+    
+    @include breakpoint(767px) {
+        padding: 12px 30px;
+        font-size: $font-size-small;
+    }
+    
+	&:hover,
+	&.primary,
+	&.hover-primary:hover {
+		border-color: color('brand-primary');
+		background: color('brand-primary');
+		color: color('white');
+	}
+
+	&.secondary,
+	&.hover-secondary:hover {
+		border-color: color('brand-secondary');
+		background: color('brand-secondary');
+		color: color('white');
+	}
+
+	&.white,
+	&.hover-white:hover {
+		border-color: color('white');
+		background: transparent;
+		color: color('white');
+	}
+
+	@media (min-width: 1200px) {
+		&.btn-lg {
+			padding: 14px 26px;
+			font-size: 110%;
+		}
+		&.btn-xl {
+			padding: 16px 30px;
+			font-size: 120%;
+		}
+	}
+}
+/** slew btn */
+
+.skew-btn .read-more {
+	-webkit-transform: skewX(-20deg);
+	-ms-transform: skewX(-20deg);
+	-o-transform: skewX(-20deg);
+	transform: skewX(-20deg);
+
+	> span {
+		-webkit-transform: skewX(20deg);
+		-ms-transform: skewX(20deg);
+		-o-transform: skewX(20deg);
+		transform: skewX(20deg);
+		display: block;
+	}
+}
+@media (min-width: 768px) {
+	.sticky-header {
+		padding-top: 0 !important;
+	}
+}

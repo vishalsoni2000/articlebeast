@@ -1,0 +1,79 @@
+footer {
+    .footer-bottom {
+        padding-top: 100px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        @include breakpoint(992px) {
+            padding-top: 60px;
+        }
+        
+        @include breakpoint(767px) {
+            padding-top: 40px;
+        }
+        
+        &:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+    }
+        
+    .footer-menu {
+        padding-bottom: 50px;
+
+        @include breakpoint(992px) {
+            padding-bottom: 25px;
+        }
+
+        .single-menu {
+            li {
+                &.current_page_item, &.current-menu-item {
+                    a {
+                        color: color('brand-secondary');
+                    }
+                } 
+            }
+        }
+
+
+        ul {
+            li {
+                list-style: none;
+                a {
+                    color: color('white');
+                    font-size: $font-size-large;
+
+                    &:hover {
+                        color: color('brand-secondary');
+                    }
+                }
+            }
+        }
+        .socialmedialinks {
+            padding-left: 0;
+            .follow {
+                color: color('white');
+            }
+        }
+    }
+
+    .copyright-block {
+        padding: 25px 0;
+        background: rgba(0,0,0,0.5);
+
+
+        @include breakpoint(992px) {
+            padding: 15px 0;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}

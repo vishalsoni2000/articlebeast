@@ -1,0 +1,86 @@
+.article-section{
+    padding: 70px 0;
+    
+    @include breakpoint(1024px) {
+        padding: 60px 0;
+    }
+    
+    @include breakpoint(767px){
+        padding: 40px 0;
+    }
+    
+    @include breakpoint(480px){
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    
+    ul {
+        padding-top: 30px;
+        
+        @include breakpoint(767px) {
+            padding-top: 0px;
+        }
+        
+        .single-blog {
+            border: 1px solid color('black');
+            margin: 25px;
+            
+            @include breakpoint(992px) {
+                margin: 15px;
+            }
+            
+            .blog-content {
+                padding: 30px;
+                
+                @include breakpoint(767px) {
+                    padding: 20px;
+                }
+            }
+            .blog-link {
+                font-size: $font-size-large;
+            }
+        }
+        
+        
+        .slick-arrow {
+            bottom: -40px;
+            top: auto;
+            transform: none;
+            font-size: 0;
+            left: 51%;
+            
+            @include breakpoint(480px) {
+                left: 50%;
+            }
+        }
+        .slick-prev, .slick-next {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: 50% 50%;
+            background-position: center;
+        }
+        .slick-prev {
+            left: 43%;
+            background-image: url('../../images/left-arrow.png');
+            
+            @include breakpoint(480px) {
+                left: 38%;
+            }
+        }
+        
+        .slick-next {
+            background-image: url('../../images/right-arrow.png');
+        }
+        
+        .slick-arrow:hover, .slick-arrow:focus {
+            background-color: transparent;
+            outline: none;
+        }
+    }
+}
+
+.single-blog{
+    .image-src{
+        padding-top: 70%;
+    }
+}

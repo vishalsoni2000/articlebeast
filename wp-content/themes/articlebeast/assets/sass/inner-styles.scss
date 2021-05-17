@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+// Configuration and helpers
+@import
+	'abstracts/variables',
+	'abstracts/mixins';
+
+// Base stuff
+@import
+	'base/normalize',
+	'base/fonts',
+	'base/helpers',
+	'base/typography',
+	'base/button',
+	'base/forms';
+
+// Vendors
+@import
+	'vendors/slick',
+	'vendors/fancybox';
+
+// Components
+@import
+	'components/header',
+	'components/popup',
+	'components/socials',
+	'components/footer';
+
+// Page-specific styles
+@import
+	'pages/default',
+	'pages/inner-pages'

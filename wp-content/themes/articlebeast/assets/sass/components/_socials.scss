@@ -1,0 +1,81 @@
+/** social media */
+
+.socialmedialinks {
+	ul {
+		display: flex;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		@include breakpoint(992px) {
+			justify-content: center;
+		}
+	}
+
+	li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&:first-child {
+			margin-left: 0;
+		}
+		margin-left: 5px;
+
+		a {
+			border-radius: 100%;
+			display: block;
+			line-height: 0;
+		}
+
+		svg {
+			height: 50px;
+			width: 50px;
+			fill: $footerSocialColor;
+			display: block;
+            
+            @include breakpoint(767px) {
+                 height: 36px;
+                 width: 36px;
+            }
+		}
+
+		&:hover {
+			svg {
+				fill: $footerSocialColorHover;
+			}
+		}
+        
+        svg, circle, g, path {
+            transition: 0.5s ease all;
+        }
+
+        a {
+            &:hover {
+                svg, circle {
+                    fill: color('brand-secondary');
+                }
+            }
+        }
+	}
+}
+
+.side-gallery-main {
+	.socialmedialinks {
+		li {
+			a {
+				background-color: $footerSocialColor;
+			}
+			svg {
+				fill: $footerSocialBG;
+			}
+			&:hover {
+				a {
+					background-color: $locationSidebarBGHover;
+				}
+				svg {
+					fill: $locationSidebarColorHover;
+				}
+			}
+		}
+	}
+}

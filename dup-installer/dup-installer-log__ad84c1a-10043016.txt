@@ -1,0 +1,205 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 04:41:21
+* VERSION: 1.3.36
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 7.2.32                                |7.1.30
+OS__________________: Linux                                 |WINNT
+CREATED_____________: 2020-08-10 04:30:16
+WP VERSION__________: 5.4.2
+DUP VERSION_________: 1.3.36
+DB__________________: 5.7.31
+DB TABLES___________: 55
+DB ROWS_____________: 114,461
+DB FILE SIZE________: 12.86MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.1.30 | SAPI: apache2handler
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: Apache/2.4.39 (Win64) OpenSSL/1.0.2s PHP/7.1.30
+DOC ROOT____________: "C:/xampp/htdocs/articlebeastfinal"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "http://localhost/articlebeastfinal/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ENGINE______: "ziparchive"
+SET DIR PERMS_______: 0
+DIR PERMS VALUE_____: 644
+SET FILE PERMS______: 0
+FILE PERMS VALUE____: 755
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "C:/xampp/htdocs/articlebeastfinal/articlebeastonline_[HASH]_20200810043016_archive.zip"
+SIZE________________: 109.28MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+
+
+START ZIP FILE EXTRACTION STANDARD >>> 
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "C:/xampp/htdocs/articlebeastfinal/articlebeastonline_[HASH]_20200810043016_archive.zip"
+SIZE________________: 109.28MBFile timestamp set to Current: 2020-08-10 04:44:27
+<<< ZipArchive Unzip Complete: true
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+
+PERMISSION UPDATES: None Applied
+
+STEP-1 COMPLETE @ 04:44:27 - RUNTIME: 186.4163 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 04:45:37
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.3.16 -- Build Server: 5.7.31
+FILE SIZE:	dup-database__[HASH].sql (13.55MB)
+TIMEOUT:	5000
+MAXPACK:	1048576
+SQLMODE:	NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[C:/xampp/htdocs/articlebeastfinal/dup-installer/dup-installer-data__[HASH].sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+**ERROR** database error write 'You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'mysqldump: Error: 'Access denied; you need (at least one of) the PROCESS privile' at line 1' - [sql=mysqldump: Error: 'Access denied; you need (at least one of) the PROCESS pr...]
+**ERROR** database error write 'Variable 'character_set_client' can't be set to the value of 'NULL'' - [sql=/*!40101 SET character_set_client = @saved_cs_client */;...]
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+ERRORS FOUND:	2
+DROPPED TABLES:	0
+RENAMED TABLES:	0
+QUERIES RAN:	496
+
+ts_redirects: (0)
+wp_commentmeta: (0)
+wp_comments: (0)
+wp_duplicator_packages: (0)
+wp_links: (0)
+wp_nf3_action_meta: (250)
+wp_nf3_actions: (8)
+wp_nf3_chunks: (0)
+wp_nf3_field_meta: (525)
+wp_nf3_fields: (8)
+wp_nf3_form_meta: (235)
+wp_nf3_forms: (2)
+wp_nf3_object_meta: (0)
+wp_nf3_objects: (0)
+wp_nf3_relationships: (0)
+wp_nf3_upgrades: (2)
+wp_ninja_forms_uploads: (0)
+wp_options: (280)
+wp_penname: (10)
+wp_postmeta: (5159)
+wp_posts: (301)
+wp_term_relationships: (28)
+wp_term_taxonomy: (88)
+wp_termmeta: (152)
+wp_terms: (88)
+wp_ualp_user_activity: (90907)
+wp_usermeta: (200)
+wp_users: (9)
+wp_wfblockediplog: (83)
+wp_wfblocks7: (0)
+wp_wfconfig: (255)
+wp_wfcrawlers: (10)
+wp_wffilechanges: (0)
+wp_wffilemods: (6623)
+wp_wfhits: (1037)
+wp_wfhoover: (0)
+wp_wfissues: (6)
+wp_wfknownfilelist: (6623)
+wp_wflivetraffichuman: (0)
+wp_wflocs: (2)
+wp_wflogins: (52)
+wp_wfls_2fa_secrets: (0)
+wp_wfls_settings: (19)
+wp_wfnotifications: (2)
+wp_wfpendingissues: (0)
+wp_wfreversecache: (2)
+wp_wfsnipcache: (0)
+wp_wfstatus: (943)
+wp_wftrafficrates: (0)
+wp_yoast_indexable: (184)
+wp_yoast_indexable_hierarchy: (27)
+wp_yoast_migrations: (15)
+wp_yoast_primary_term: (0)
+wp_yoast_seo_links: (66)
+wp_yoast_seo_meta: (206)
+Removed '50' cache/transient rows
+
+INSERT DATA RUNTIME: 8.2445 sec.
+STEP-2 COMPLETE @ 04:45:45 - RUNTIME: 8.2624 sec.
+====================================
+NEXT STEP NOTICES
+====================================
+-----------------------
+[WARNING] DATABASE ERROR: database error write
+
+====================================
+[PHP ERR][WARN] MSG:mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) [CODE:2|FILE:C:\xampp\htdocs\articlebeastfinal\dup-installer\classes\class.db.php|LINE:48]
+DATABASE CONNECTION ERROR: Access denied for user 'root'@'localhost' (using password: YES)[ERRNO:1045]
+[PHP ERR][WARN] MSG:mysqli_query() expects parameter 1 to be mysqli, boolean given [CODE:2|FILE:C:\xampp\htdocs\articlebeastfinal\dup-installer\classes\class.db.php|LINE:221]
+[PHP ERR][WARN] MSG:mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given [CODE:2|FILE:C:\xampp\htdocs\articlebeastfinal\dup-installer\classes\utilities\class.u.php|LINE:429]
+[PHP ERR][WARN] MSG:mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given [CODE:2|FILE:C:\xampp\htdocs\articlebeastfinal\dup-installer\classes\utilities\class.u.php|LINE:429]
+[PHP ERR][WARN] MSG:mysqli_query() expects parameter 1 to be mysqli, boolean given [CODE:2|FILE:C:\xampp\htdocs\articlebeastfinal\dup-installer\classes\utilities\class.u.php|LINE:429]
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+[PHP ERR][WARN] MSG:mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) [CODE:2|FILE:C:\xampp\htdocs\articlebeastfinal\dup-installer\classes\class.db.php|LINE:48]
+DATABASE CONNECTION ERROR: Access denied for user 'root'@'localhost' (using password: YES)[ERRNO:1045]
+[PHP ERR][NOTICE] MSG:Undefined variable: post_db_host [CODE:8|FILE:C:\xampp\htdocs\articlebeastfinal\dup-installer\classes\class.s3.func.php|LINE:278]
+[PHP ERR][NOTICE] MSG:Undefined variable: post_db_name [CODE:8|FILE:C:\xampp\htdocs\articlebeastfinal\dup-installer\classes\class.s3.func.php|LINE:278]
+
+INSTALLER ERROR:
+Unable to connect with the following parameters: 
+ HOST: 
+ DATABASE: 
+Connection Error: Error: Access denied for user 'root'@'localhost' (using password: YES)
+
+[PHP ERR][WARN] MSG:mysqli_close() expects parameter 1 to be mysqli, boolean given [CODE:2|FILE:C:\xampp\htdocs\articlebeastfinal\dup-installer\classes\class.s3.func.php|LINE:305]
+
+STEP-3 ERROR @ 04:48:17 - RUNTIME: 0.0034 sec. 
+
+

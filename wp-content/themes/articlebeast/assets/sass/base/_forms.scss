@@ -1,0 +1,530 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the form component.
+// -----------------------------------------------------------------------------
+/* Forms
+========================================================================== */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.4;
+	margin: 0;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+	-webkit-appearance: button;
+
+}
+
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+textarea {
+	overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+[type="number"] {
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button {
+		height: auto;
+	}
+}
+
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+
+	&::-webkit-search-decoration {
+		-webkit-appearance: none;
+	}
+}
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+details {
+	display: block;
+}
+
+summary {
+	display: list-item;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+.nf-field-element .button,
+.nf-field-element button,
+.nf-field-element input[type="button"],
+.nf-field-element input[type="reset"],
+.nf-field-element input[type="submit"] {
+	-webkit-appearance: none;
+	transition: 0.5s ease all;
+	background-color: $button-bg;
+	border-width: $button-border-size;
+	border-style: $button-border-style;
+	border-color: $button-border-color;
+	border-radius: $button-radius;
+	box-sizing: border-box;
+	color: $button-color;
+	outline: none;
+	height: $button-height;
+	text-decoration: none;
+	vertical-align: bottom;
+	font-size: $button-font-size;
+	font-weight: $button-font-weight;
+	padding: 0 20px;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $button-hover-bg;
+		color: $button-hover-color;
+		border-color: $button-hover-bg;
+	}
+
+	&:visited {
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+
+
+.nf-field-element input[type="text"],
+.nf-field-element input[type="email"],
+.nf-field-element input[type="url"],
+.nf-field-element input[type="password"],
+.nf-field-element input[type="search"],
+.nf-field-element input[type="number"],
+.nf-field-element input[type="tel"],
+.nf-field-element input[type="range"],
+.nf-field-element input[type="date"],
+.nf-field-element input[type="month"],
+.nf-field-element input[type="week"],
+.nf-field-element input[type="time"],
+.nf-field-element input[type="datetime"],
+.nf-field-element input[type="datetime-local"],
+.nf-field-element input[type="color"],
+.nf-field-element textarea,
+.list-select-wrap select {
+	-webkit-backface-visibility: hidden;
+	background-color: $input-bg;
+	color: $input-color;
+	border-width: $input-border-size;
+	border-style: $input-border-style;
+	border-color: $input-border-color;
+	border-radius: $input-radius;
+	box-sizing: border-box;
+	outline: none;
+	padding: 10px 20px !important;
+	height: $input-height;
+	-webkit-appearance: none;
+	outline-offset: 0;
+	font-size: $input-font-size;
+	font-weight: $input-font-weight;
+
+	&:focus {
+		outline: none;
+		border-color: $input-border-color-focus;
+	}
+
+	&::-webkit-input-placeholder {
+		opacity: 1 !important;
+		color: $input-color;
+	}
+
+	&::-moz-placeholder {
+		opacity: 1 !important;
+		color: $input-color;
+	}
+
+	&:-ms-input-placeholder {
+		opacity: 1 !important;
+		color: $input-color;
+	}
+
+	&:-moz-placeholder {
+		opacity: 1 !important;
+		color: $input-color;
+	}
+}
+
+
+.nf-field-element {
+	select {
+		background-image: linear-gradient(45deg, transparent 50%, $input-border-color 50%), linear-gradient(135deg, $input-border-color 50%, transparent 50%), linear-gradient(to right, $input-border-color ,$input-border-color);
+		background-position: calc(100% - 20px) 1.2em, calc(100% - 15px) 1.2em, calc(100% - 2.5em) 0.28em;
+		background-size: 5px 6px, 6px 5px, $input-border-size 2em;
+		background-repeat: no-repeat;
+		padding: 0 20px !important;
+		padding-right: 50px !important;
+		border-width: $input-border-size !important;
+		border-style: $input-border-style;
+		border-color: $input-border-color;
+		border-radius: $input-radius;
+		height: $input-height !important;
+		font-size: $input-font-size;
+		font-weight: $input-font-weight;
+		&:focus {
+			background-image: linear-gradient(45deg, transparent 50%, $input-border-color-focus 50%), linear-gradient(135deg, $input-border-color-focus 50%, transparent 50%), linear-gradient(to right, $input-border-color-focus ,$input-border-color-focus);
+		}
+
+		&:-moz-focusring {
+			color: transparent;
+			text-shadow: 0 0 0 color('black');
+		}
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+
+		&::-ms-expand {
+			display: none;
+		}
+	}
+}
+
+.nf-error .nf-field-element {
+	textarea,
+	input,
+	select {
+		border-color: color('error') !important;
+		color: color('error') !important;
+		background-color: lighten( color('error'), 40% ) !important;
+		border-width: $input-border-size;
+		&::-webkit-input-placeholder {
+			opacity: 1 !important;
+			color: color('error') !important;
+		}
+
+		&::-moz-placeholder {
+			opacity: 1 !important;
+			color: color('error') !important;
+		}
+
+		&:-ms-input-placeholder {
+			opacity: 1 !important;
+			color: color('error') !important;
+		}
+
+		&:-moz-placeholder {
+			opacity: 1 !important;
+			color: color('error') !important;
+		}
+	}
+	select {
+		background-image: linear-gradient(45deg, transparent 50%, color('error') 50%), linear-gradient(135deg, color('error') 50%, transparent 50%), linear-gradient(to right, color('error') ,color('error') ) !important;
+		&:focus {
+			background-image: linear-gradient(45deg, transparent 50%, color('error') 50%), linear-gradient(135deg, color('error') 50%, transparent 50%), linear-gradient(to right, color('error') ,color('error') ) !important;
+		}
+	}
+}
+
+
+// customization for primary theme color section input, select and text area
+.ninja-field--primary {
+	.nf-field-element input[type="text"],
+	.nf-field-element input[type="email"],
+	.nf-field-element input[type="url"],
+	.nf-field-element input[type="password"],
+	.nf-field-element input[type="search"],
+	.nf-field-element input[type="number"],
+	.nf-field-element input[type="tel"],
+	.nf-field-element input[type="range"],
+	.nf-field-element input[type="date"],
+	.nf-field-element input[type="month"],
+	.nf-field-element input[type="week"],
+	.nf-field-element input[type="time"],
+	.nf-field-element input[type="datetime"],
+	.nf-field-element input[type="datetime-local"],
+	.nf-field-element input[type="color"],
+	.nf-field-element textarea,
+	.list-select-wrap select {
+		background-color: $ninjaFieldBGColorPrimary;
+		color: $ninjaFieldTextColorPrimary;
+		border-color: $ninjaFieldBorderColorPrimary;
+		&::-webkit-input-placeholder {
+			opacity: 1 !important;
+			color: $ninjaFieldTextColorPrimary ;
+		}
+
+		&::-moz-placeholder {
+			opacity: 1 !important;
+			color: $ninjaFieldTextColorPrimary ;
+		}
+
+		&:-ms-input-placeholder {
+			opacity: 1 !important;
+			color: $ninjaFieldTextColorPrimary ;
+		}
+
+		&:-moz-placeholder {
+			opacity: 1 !important;
+			color: $ninjaFieldTextColorPrimary ;
+		}
+	}
+
+	.nf-field-element {
+		select {
+			background-image: linear-gradient(45deg, transparent 50%, $ninjaFieldBorderColorPrimary 50%), linear-gradient(135deg, $ninjaFieldBorderColorPrimary 50%, transparent 50%), linear-gradient(to right, $ninjaFieldBorderColorPrimary ,$ninjaFieldBorderColorPrimary);
+			background-color: $ninjaFieldBGColorPrimary;
+			border-color: $ninjaFieldBorderColorPrimary;
+			color: $ninjaFieldTextColorPrimary;
+			&:focus {
+
+			}
+		}
+
+		.button,
+		button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"] {
+			border-color: $ninjaButtonBGColorPrimary;
+			background-color: $ninjaButtonBGColorPrimary;
+			color: $ninjaButtonTextColorPrimary;
+			&:hover {
+				border-color: $ninjaButtonTextColorPrimary;
+				background-color: $ninjaButtonTextColorPrimary;
+				color: $ninjaButtonBGColorPrimary;
+			}
+		}
+	}
+}
+
+// customization for secondary theme color section input, select and text area
+
+.ninja-field--secondary {
+	.nf-field-element input[type="text"],
+	.nf-field-element input[type="email"],
+	.nf-field-element input[type="url"],
+	.nf-field-element input[type="password"],
+	.nf-field-element input[type="search"],
+	.nf-field-element input[type="number"],
+	.nf-field-element input[type="tel"],
+	.nf-field-element input[type="range"],
+	.nf-field-element input[type="date"],
+	.nf-field-element input[type="month"],
+	.nf-field-element input[type="week"],
+	.nf-field-element input[type="time"],
+	.nf-field-element input[type="datetime"],
+	.nf-field-element input[type="datetime-local"],
+	.nf-field-element input[type="color"],
+	.nf-field-element textarea,
+	.list-select-wrap select {
+		background-color: $ninjaFieldBGColorSecondary;
+		color: $ninjaFieldTextColorSecondary;
+		border-color: $ninjaFieldBorderColorSecondary;
+		&::-webkit-input-placeholder {
+			opacity: 1 !important;
+			color: $ninjaFieldTextColorSecondary ;
+		}
+
+		&::-moz-placeholder {
+			opacity: 1 !important;
+			color: $ninjaFieldTextColorSecondary ;
+		}
+
+		&:-ms-input-placeholder {
+			opacity: 1 !important;
+			color: $ninjaFieldTextColorSecondary ;
+		}
+
+		&:-moz-placeholder {
+			opacity: 1 !important;
+			color: $ninjaFieldTextColorSecondary ;
+		}
+	}
+
+	.nf-field-element {
+		select {
+			background-image: linear-gradient(45deg, transparent 50%, $ninjaFieldBorderColorSecondary 50%), linear-gradient(135deg, $ninjaFieldBorderColorSecondary 50%, transparent 50%), linear-gradient(to right, $ninjaFieldBorderColorSecondary ,$ninjaFieldBorderColorSecondary);
+			background-color: $ninjaFieldBGColorSecondary;
+			color: $ninjaFieldTextColorSecondary;
+			border-color: $ninjaFieldBorderColorSecondary;
+			&:focus {
+
+			}
+		}
+
+		.button,
+		button,
+		input[type="button"],
+		input[type="reset"],
+		input[type="submit"] {
+			border-color: $ninjaButtonBGColorSecondary;
+			background-color: $ninjaButtonBGColorSecondary;
+			color: $ninjaButtonTextColorSecondary;
+			&:hover {
+				border-color: $ninjaButtonTextColorSecondary;
+				background-color: $ninjaButtonTextColorSecondary;
+				color: $ninjaButtonBGColorSecondary;
+			}
+		}
+	}
+}
+
+input[type="search"]::-webkit-search-decoration {
+	display: none;
+}
+
+form p {
+	margin: 1rem 0;
+}
+
+button,
+input,
+textarea {
+	font-family: $input-font-family;
+}
+
+textarea {
+	height: $textarea-height-base;
+	padding: 20px 15px;
+	resize: none;
+	overflow: auto;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: $font-size-base;
+	line-height: 1.5;
+	font-weight: $label-font-weight;
+	font-size: $label-font-size;
+	color: $label-color;
+}
+
+.form-group {
+	margin-bottom: 30px;
+}
+
+#sidebar .field-wrap {
+	justify-content: center;
+}
+
+.upload-btn {
+	.files_uploaded p {
+		margin: 0;
+		font-size: 12px;
+	}
+
+	.nf-fu-progress {
+		height: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+#ninja_forms_required_items,
+.nf-field-container {
+	margin-bottom: 15px !important;
+}
+
+.nf-form-hp,
+.nf-form-layout .nf-before-form-content {
+	display: none;
+}
+@media all and (-ms-high-contrast: active) {
+	select:focus::-ms-value {
+		background-color: transparent;
+		/*make the select background transparent in ie */
+		color: inherit;
+	}
+}
+@media all and (-ms-high-contrast: none) {
+	/* Remove blue highlight in Normal mode*/
+	select:focus::-ms-value {
+		background-color: transparent;
+		color: inherit;
+	}
+}
+
+.submit-container .submit-wrap .nf-field-element {
+	width: auto;
+	border-radius: 8px;
+	-webkit-transition: 0.5s ease all;
+	-o-transition: 0.5s ease all;
+	transition: 0.5s ease all;
+}
+@include breakpoint(480px) {
+	.label-above .nf-field-element,
+	.label-below .nf-field-element {
+		text-align: center;
+	}
+
+	.nf-form-cont .one-half,
+	.nf-form-cont .three-sixths,
+	.nf-form-cont .two-fourths {
+		width: 100% !important;
+		margin-left: 0 !important;
+	}
+
+	.field-wrap {
+		justify-content: center;
+	}
+
+	.nf-form-cont .nf-form-content .one-third,
+	.nf-form-cont .nf-form-content .two-sixths {
+		width: 100%;
+		margin: 0;
+	}
+}

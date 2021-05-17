@@ -1,0 +1,9 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^yooarticlesdirectory\.articlebeast\.online$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.yooarticlesdirectory\.articlebeast\.online$
+RewriteRule ^(.*)$ "https\:\/\/articlebeast\.online\/$1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^yooarticlesdirectory\.us$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.yooarticlesdirectory\.us$
+RewriteRule ^(.*)$ "https\:\/\/articlebeast\.online\/$1" [R=301,L]
+

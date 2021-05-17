@@ -1,0 +1,29 @@
+
+@import
+	"abstracts/variables",
+	"abstracts/mixins";
+
+.sources-list-block {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    h4 {
+        margin-bottom: 10px;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 15px;
+        li {
+            margin-left: 20px;
+            display: flex;
+            align-items: flex-start;
+            &:before {
+                content: "\27A3";
+                margin-right: 10px;
+                font-size: 150%;
+                line-height: 1.2;
+            }
+        }
+    }
+}

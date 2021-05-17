@@ -1,0 +1,6 @@
+/* Responsive */
+@media (max-width: 767px){
+	.single-post .cell-6 {
+		width: 100%;
+	}
+}

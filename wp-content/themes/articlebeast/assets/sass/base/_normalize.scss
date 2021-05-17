@@ -1,0 +1,202 @@
+html {
+	font-size: 16px;
+	line-height: 1.15;
+	width: 100%;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+* {
+	-webkit-text-size-adjust: none;
+	box-sizing: border-box;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	text-rendering: optimizeLegibility;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+a {
+	background-color: transparent;
+}
+
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+img {
+	border-style: none;
+}
+// Elements
+
+html {
+	box-sizing: border-box;
+}
+
+::-moz-selection,
+::selection {
+	background-color: color('gray','darkest');
+}
+
+* {
+	box-sizing: inherit;
+
+	&:after,
+	&:before {
+		box-sizing: inherit;
+	}
+}
+
+a {
+	transition: color 110ms ease-in-out;
+	color: color('brand-primary');
+
+	&:active,
+	&:hover {
+		color: color('brand-primary');
+		outline: 0;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: 0;
+		outline-style: dotted;
+		text-decoration: none;
+	}
+}
+
+hr {
+	background-color: color('gray','darkest');
+	border: 0;
+	height: 2px;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+ul {
+	list-style: disc;
+
+	ul {
+		list-style-type: circle;
+	}
+}
+
+ol {
+	list-style: decimal;
+}
+
+li {
+	> {
+		ol,
+		ul {
+			padding-left: 2rem;
+		}
+	}
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1rem 1rem;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	position: relative;
+}
+
+figure {
+	margin: 0;
+}
+
+blockquote {
+	border-left: 2px solid color('brand-primary');
+	margin-left: 0;
+	padding: 0 0 0 1rem;
+
+	> p {
+		margin: 0 0 1rem;
+	}
+
+	cite {
+		color: color('gray','darkest');
+	}
+}
+
+table {
+	margin: 0 0 1rem;
+	border-collapse: collapse;
+	width: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+	td,
+	th {
+		padding: 0.5em;
+		border: 1px solid color('gray','darkest');
+		word-break: break-all;
+        text-align: left;
+	}
+}

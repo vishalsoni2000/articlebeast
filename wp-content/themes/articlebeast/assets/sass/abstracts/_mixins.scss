@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+// Responsive media breakpoint
+
+@mixin breakpoint($size, $mode: false) {
+	@if $mode {
+		@if $mode == 'port' {
+			$mode: portrait;
+		}
+		@if $mode == 'land' {
+			$mode: landscape;
+		}
+		@media ( max-width: $size ) and (orientation: $mode) {
+			@content;
+		}
+	} @else {
+		@media ( max-width: $size ) {
+			@content;
+		}
+	}
+}
+
+@mixin gen-props($prefix, $property) {
+	@each $color-name, $color in $colors {
+		.#{$prefix}-#{$color-name},
+		.hover-#{$prefix}-#{$color-name}:hover {
+			#{$property}: $color ;
+		}
+	}
+}
+
+@include gen-props('text', 'color');
+@include gen-props('bg', 'background-color');
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+//Represent transform
+@mixin transform($value) {
+    transform: 			skewX($value);
+    -webkit-transform: 	skewX($value);
+}
